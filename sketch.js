@@ -23,7 +23,7 @@ function setup() {
   player = new Player();
   wordClassifier.classify(hearWord);
 }
-function hear(error, results) {
+function hearWord(error, results) {
   if (results[0].label === "up") player.jump();
 }
 
